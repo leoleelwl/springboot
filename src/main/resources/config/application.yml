@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    name: glzg_dev
+    url: jdbc:oracle:thin:@localhost:1521/orcl
+    username: glzg_dev
+    password: glzg_dev
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName : oracle.jdbc.OracleDriver
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: springboot.model
